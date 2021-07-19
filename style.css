@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #7cfef0;
+  font-family: "Encode Sans SC", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #177e89;
+  gap: 50px;
+}
+
+.counter-Letters-app h1 {
+  line-height: 49px;
+  font-size: 50px;
+}
+
+.input-area {
+  margin: 2rem 0;
+}
+input {
+  color: #222;
+  width: 100%;
+  line-height: 27px;
+  padding-left: 3px;
+}
+
+.input-area p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+/*--------------Counter-----------------------------*/
+.counterNumber .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid whitesmoke;
+  margin: 0 20px;
+  margin-top: 20px;
+}
+
+.counterNumber h1 {
+  font-size: 55px;
+  flex: 2;
+}
+.counterNumber .buttons {
+  display: flex;
+  flex: 1;
+  column-gap: 42px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.increase,
+.decrease {
+  border: 1px solid whitesmoke;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.increase:hover,
+.decrease:hover {
+  background-color: teal;
+}
+#output {
+  font-size: 80px;
+}
+
+/*---------------- To do List ----------------*/
+.container-task {
+  min-width: 300px;
+  transition: all 1s ease;
+}
+.to-do-list h1 {
+  line-height: 48px;
+  font-size: 50px;
+}
+
+.to-do-list .main {
+  margin: 2rem 0;
+  min-width: 300px;
+}
+
+.to-do-list .input-area {
+  display: flex;
+}
+
+#add-task-btn {
+  margin-right: 10px;
+  padding: 0.3rem;
+  color: teal;
+  cursor: pointer;
+}
+
+#add-task-btn .icon {
+  color: teal;
+  font-size: 25px;
+}
+
+.tasks-area li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0.8rem 1rem;
+  background-color: #fee9e1;
+  color: teal;
+  border-radius: 5px;
+  margin: 0.8rem 0;
+  width: 300px;
+}
+
+.divBtns {
+  display: flex;
+  column-gap: 13px;
+}
+.divBtns button {
+  font-size: 17px;
+  cursor: pointer;
+  border: 0;
+}
+.checkMark {
+  color: rgba(0, 255, 0, 1) !important;
+}
+.checkBtn i {
+  color: rgba(0, 255, 0, 0.534);
+}
+.trashBtn i {
+  color: rgba(255, 0, 0, 1);
+}
+
+/*------Animation remove------*/
+
+.fall {
+  transform: translateX(3rem);
+  opacity: 0;
+}
+
+/*------SEARCH--------*/
+.select,
+.select select {
+  color: teal;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+.check {
+  opacity: 0.5;
+}
